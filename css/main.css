@@ -1,0 +1,278 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*--------------------*/
+
+.wrapper {
+  font-family: "Raleway", sans-serif;
+}
+
+/* Header */
+
+.header {
+  margin-bottom: 100px;
+}
+.header__menu {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  height: 70px;
+}
+.header__menu-links {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+}
+.links {
+  display: grid;
+  grid-template-columns: max-content max-content max-content max-content;
+  color: #000;
+}
+.links__item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  margin-right: 40px;
+  color: #000;
+}
+.links__item:last-child {
+  margin-right: 0;
+}
+.links__item a:visited {
+  color: #000;
+}
+.links__item:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
+.header__intro {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+.header__intro-title {
+  color: #cfa29d;
+  font-size: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.header__intro-subtitle {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.header__intro-img img {
+  width: 65%;
+}
+
+/* Meeting */
+
+.meeting {
+  display: grid;
+  justify-content: center;
+}
+.meeting__inner {
+  width: 1500px;
+  background-color: #f7f7f7;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  padding: 70px 0 70px 0;
+}
+.container {
+  width: 900px;
+}
+.meeting__inner-title {
+  color: #cfa29d;
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  letter-spacing: 0.1em;
+}
+.meeting__inner-text {
+  font-family: "Montserrat", sans-serif;
+  opacity: 0.9;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+}
+
+/* Progress */
+
+.progress {
+  margin-top: 100px;
+  overflow: hidden;
+}
+.progress__inner {
+  display: grid;
+  justify-content: center;
+}
+.container {
+  justify-self: center;
+}
+.progress__inner-title {
+  color: #cfa29d;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.progress__inner-img {
+  display: grid;
+  grid-template-columns: max-content max-content max-content;
+}
+.progress__inner-img img {
+  margin-right: 70px;
+}
+.progress__inner-img img:last-child {
+  margin-right: 0;
+}
+
+/* Thoughts */
+
+.thoughts {
+  margin-top: 100px;
+  overflow: hidden;
+}
+.thoughts__title {
+  color: #cfa29d;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.thoughts__inner {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+thoughts__inner-img {
+}
+.thoughts__inner-congrat {
+  background-color: #e4e4e4;
+  display: grid;
+  justify-content: center;
+}
+.content {
+  width: 500px;
+}
+.congrat__names {
+  color: #cfa29d;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  align-self: center;
+  justify-self: center;
+}
+.congrat__text {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  font-size: 15px;
+  text-align: center;
+}
+/* Footer */
+
+.footer {
+  height: 70px;
+  background-color: #cccccc;
+  display: grid;
+  align-items: center;
+}
+.footer__inner {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+  align-items: center;
+}
+.footer__inner-img img {
+  width: 22px;
+}
+.footer__inner-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
